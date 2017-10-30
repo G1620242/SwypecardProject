@@ -1,6 +1,19 @@
 .nav {
-  background-color: #4CFF42
+  background-color: #18b86e;
 }
 body {
     padding-bottom:80px;
+}
+
+.card {    
+ width:625px;
+background-color: #18b86e;
+}
+
+.parallaxheader{
+    font-family: HelveticaNeue;
+}
+.grey-text{
+    font-size: 25px;
+    font-family: HelveticaNeue;
 }
