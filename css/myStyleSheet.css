@@ -1,12 +1,9 @@
 .nav {
   background-color: #18b86e;
 }
-body {
-    padding-bottom:80px;
-}
 
 .card {    
- width:625px;
+ width:460px;
 background-color: #18b86e;
 font-family: HelveticaNeue;
 }
@@ -17,4 +14,7 @@ font-family: HelveticaNeue;
 .grey-text{
     font-size: 25px;
     font-family: HelveticaNeue;
+}
+.page-footer{
+    background-color:#18b86e;
 }
