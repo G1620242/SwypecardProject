@@ -17,3 +17,5 @@ font-family: HelveticaNeue;
 .page-footer{
     background-color:#18b86e;
 }
+
+ <script>$( document ).ready(function)(){$(".dropdown-button").dropdown();})</script>
