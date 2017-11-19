@@ -54,5 +54,19 @@ font-family: HelveticaNeue;
    .input-field .prefix.active {
      color: #18b86e;
    }
+.collapsible-header{
+    color:#18b86e 
+}
+.collapsible-body{
+     color:#18b86e 
+}
+
+.fa{
+     margin: 5px;
+     padding: 2opx;
+     width:60px;
+    text-align: right;
+    text-decoration: none;
+}
 
  /*<script>$( document ).ready(function)(){$(".dropdown-button").dropdown();})</script>*/ 
