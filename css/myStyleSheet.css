@@ -1,18 +1,19 @@
 .nav {
   background-color: #18b86e;
+  font-family: 'Varela Round', sans-serif;
 }
 
 .card {    
 background-color: #18b86e;
-font-family: HelveticaNeue;
+font-family: 'Varela Round', sans-serif;
 }
 
 .parallaxheader{
-    font-family: HelveticaNeue;
+    font-family: 'Varela Round', sans-serif;
 }
 .grey-text{
     font-size: 25px;
-    font-family: HelveticaNeue;
+    font-family: 'Varela Round', sans-serif;
 }
 .page-footer{
     background-color:#18b86e;
@@ -68,5 +69,3 @@ font-family: HelveticaNeue;
     text-align: right;
     text-decoration: none;
 }
-
- /*<script>$( document ).ready(function)(){$(".dropdown-button").dropdown();})</script>*/ 
