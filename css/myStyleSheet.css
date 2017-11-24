@@ -62,10 +62,11 @@ font-family: 'Varela Round', sans-serif;
      color:#18b86e 
 }
 
-.fa{
-     margin: 5px;
-     padding: 2opx;
-     width:60px;
-    text-align: right;
+.fa {
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
     text-decoration: none;
+    border-radius: 50%;
 }
