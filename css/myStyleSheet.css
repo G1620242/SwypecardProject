@@ -62,6 +62,23 @@ font-family: 'Varela Round', sans-serif;
      color:grey
 }
 
+.footer-copyright {
+    text-align: center;
+}
+
+.page-footer .col {
+    text-align: center;
+}
+
+.page-footer h5 {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+}
+.page-footer p {
+    font-family: 'Varela Round', sans-serif;
+    font-size: 18px;
+}
+
 .fa {
     padding: 20px;
     font-size: 30px;
@@ -70,3 +87,21 @@ font-family: 'Varela Round', sans-serif;
     text-decoration: none;
     border-radius: 50%;
 }
+
+
+.fa:hover {
+    opacity: 0.2;
+}
+
+
+
+
+.fa-facebook {
+    color: white;
+}
+
+
+.fa-twitter {
+    color: white;
+}
+
