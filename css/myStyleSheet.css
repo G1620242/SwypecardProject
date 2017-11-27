@@ -106,6 +106,9 @@ font-family: 'Varela Round', sans-serif;
 }
 
 .button{
-    color: #18b86e
+    text-align: center;
+}
+.btn{
+    background-color:#18b86e;
 }
 
