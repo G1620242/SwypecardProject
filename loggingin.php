@@ -10,7 +10,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
    $myusername = mysqli_real_escape_string($conn,$_POST["username"]);
    $mypassword = mysqli_real_escape_string($conn,$_POST["password"]); 
 
-   $sql = "SELECT CustomerID FROM User WHERE Username = '$myusername' and Password = '$mypassword'";
+   $sql = "SELECT CustomerID FROM user WHERE Username = '$myusername' and Password = '$mypassword'";
    $result = mysqli_query($conn,$sql);
    $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
    $active = $row["CustomerID"];
