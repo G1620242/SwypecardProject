@@ -15,7 +15,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $myphonenumber = mysqli_real_escape_string($conn,$_POST["phone_number"]);
    
 
-    $sql = "INSERT INTO User (FirstName, LastName, Username, Password, Address, DOB, Email, PhoneNumber)
+    $sql = "INSERT INTO user (FirstName, LastName, Username, Password, Address, DOB, Email, PhoneNumber)
     VALUES ('$myfirstname', '$mylastname', '$myusername', '$mypassword', '$myaddress', '$myDOB', '$myemail', '$myphonenumber')";
     if (mysqli_query($conn, $sql)) {
         $info = "User Created Successfully!";
