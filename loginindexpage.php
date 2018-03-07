@@ -64,11 +64,48 @@ include("userdetails.php");
         <!--Navbar End-->
         <br>
         
-        <div class="container center">
+           <div class="container">
+          
+       <img class="responsive-img" src="assets/HomePicture.jpg">
+               
+               <div class="container center">
         <div class="col s12 m12 l3">
             <h1>Welcome <?php echo $row["Username"]; ?></h1>
         </div>
     </div>
+        
+        <div class="row">
+         <div class="col s12 m6 l6">
+            <div class="card">
+               <div class="card-content white-text">
+                  <span class="card-title"><h3>News and Updates</h3></span>
+                  <p>Swypecard has now been launched for Trains, Buses and Taxis be sure to apply for the card on this website to get yours and try our service.</p>
+               </div>
+            </div>
+         </div>
+         
+         <div class="col s12 m6 l6">
+            <div class="card">
+               <div class="card-content white-text"> 
+                   <span class="card-title"><h3>Collaborations</h3></span>
+                  <p>We are working with the public transport companies Arriva, London Midland, National Express to make our services as efficient as possible.</p>
+               </div>
+            </div>
+         </div>
+          
+      </div>
+       <!--Carousel Code-->        
+    </div>
+    <div class="container">
+    <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="assets/Swypecard%20Product.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="assets/Swypecard%20Product%20back.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="assets/trainpic2.jpeg"></a>
+    <a class="carousel-item" href="#three!"><img src="assets/buspic2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="assets/buspic3.jpeg"></a>
+  </div>   
+    </div>
+        
         
         <footer class="page-footer">
           <div class="container">
