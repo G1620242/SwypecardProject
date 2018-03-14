@@ -11,16 +11,16 @@ $info = "";
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-          
+
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      
+
       <!--My Style Sheet-->
       <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
       <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
     </head>
 
     <body>
-        
+
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -52,7 +52,7 @@ $info = "";
             <li><a href="booking.html">Book</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="sign_up.php">Sign Up</a></li>
-             <li><a href="log_in.html">Log In</a></li>
+             <li><a href="log_in.php">Log In</a></li>
       </ul>
          <ul class="side-nav" id="mobile-demo">
              <li><a href="about.html">About</a></li>
@@ -66,11 +66,11 @@ $info = "";
   </nav>
         <!--Navbar End-->
         <br>
-        
+
              <div class="container">
- 
+
        <img class="responsive-img" src="assets/HomePicture.jpg">
-               
+
            <div class="col s12 m12 l12">
             <div class="card">
                <div class="card-content white-text">
@@ -91,19 +91,19 @@ $info = "";
               <input name="password" type="password" class="validate">
               <label for="password">Password</label>
             </div>
-          </div>        
-          
+          </div>
+
           <!--SUBMIT BUTTON-->
           <button class="btn waves-effect waves-light" type="submit" name="Submit">Submit
         <i class="material-icons right">send</i>
       </button>
         </form>
-    </div>     
-               
-                 
+    </div>
+
+
   </div>
   <br>
-        
+
         <footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -123,6 +123,6 @@ $info = "";
             </div>
           </div>
         </footer>
-            
+
     </body>
   </html>

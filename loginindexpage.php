@@ -7,16 +7,15 @@ include("userdetails.php");
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-          
+
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      
+
       <!--My Style Sheet-->
       <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
       <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
     </head>
-
     <body>
-        
+
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -25,14 +24,14 @@ include("userdetails.php");
       <script>$( document ).ready(function)(){$(".dropdown-button").dropdown();})</script>
         <!--Navbar Start"-->
     <ul id="dropdown1" class="dropdown-content">
-        <li><a href="bus_services.html">Bus</a></li>
+        <li><a href="loginbus_services.html">Bus</a></li>
         <li class="divider"></li>
         <li><a href="train_services.html">Trains</a></li>
         <li class="divider"></li>
         <li><a href="taxi_services.html">Taxi</a></li>
     </ul>
     <ul id="dropdown2" class="dropdown-content">
-        <li><a href="bus_services.html">Bus</a></li>
+        <li><a href="loginbus_services.html">Bus</a></li>
         <li class="divider"></li>
         <li><a href="train_services.html">Trains</a></li>
         <li class="divider"></li>
@@ -43,7 +42,7 @@ include("userdetails.php");
       <a href="index.html" class="brand-logo"><img src ="assets/SwypeCard%202.jpg"></a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="about.html">About</a></li>
+            <li><a href="loginabout.html">About</a></li>
             <li><a class = "dropdown-button" href="#" data-activates="dropdown1">Services <i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="booking.html">Book</a></li>
             <li><a href="faq.html">FAQ</a></li>
@@ -51,29 +50,29 @@ include("userdetails.php");
             <li><a href="log_in.html">Log In</a></li>
       </ul>
          <ul class="side-nav" id="mobile-demo">
-             <li><a href="about.html">About</a></li>
+             <li><a href="loginabout.html">About</a></li>
              <li><a class = "dropdown-button" href="#" data-activates="dropdown2">Services <i class="material-icons right">arrow_drop_down</i></a></li>
              <li><a href="booking.html">Book</a></li>
              <li><a href="faq.html">FAQ</a></li>
              <li><a href="sign_up.php">Sign Up</a></li>
              <li><a href="log_in.html">Log In</a></li>
-             
+
       </ul>
     </div>
   </nav>
         <!--Navbar End-->
         <br>
-        
+
            <div class="container">
-          
+
        <img class="responsive-img" src="assets/HomePicture.jpg">
-               
+
                <div class="container center">
         <div class="col s12 m12 l3">
             <h1>Welcome <?php echo $row["Username"]; ?></h1>
         </div>
     </div>
-        
+
         <div class="row">
          <div class="col s12 m6 l6">
             <div class="card">
@@ -83,18 +82,18 @@ include("userdetails.php");
                </div>
             </div>
          </div>
-         
+
          <div class="col s12 m6 l6">
             <div class="card">
-               <div class="card-content white-text"> 
+               <div class="card-content white-text">
                    <span class="card-title"><h3>Collaborations</h3></span>
                   <p>We are working with the public transport companies Arriva, London Midland, National Express to make our services as efficient as possible.</p>
                </div>
             </div>
          </div>
-          
+
       </div>
-       <!--Carousel Code-->        
+       <!--Carousel Code-->
     </div>
     <div class="container">
     <div class="carousel">
@@ -103,10 +102,10 @@ include("userdetails.php");
     <a class="carousel-item" href="#three!"><img src="assets/trainpic2.jpeg"></a>
     <a class="carousel-item" href="#three!"><img src="assets/buspic2.jpg"></a>
     <a class="carousel-item" href="#three!"><img src="assets/buspic3.jpeg"></a>
-  </div>   
+  </div>
     </div>
-        
-        
+
+
         <footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -126,6 +125,6 @@ include("userdetails.php");
             </div>
           </div>
         </footer>
-            
+
     </body>
   </html>
