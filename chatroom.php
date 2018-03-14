@@ -97,7 +97,7 @@ include("functions.php");
     $sql = "INSERT INTO message (author, message)
     VALUES ('$author', '$message')";
     if (mysqli_query($conn, $sql)) {
-        header("Location: chatroom.php")
+        header("Location: chatroom.php");
         $info = "Message Added Successfully";
     } else {
         $info ="Unable to Add Message";
