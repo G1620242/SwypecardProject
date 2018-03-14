@@ -1,4 +1,4 @@
-<?
+<?php
 include("config.php");
  
 mysql_select_db($dbname);
