@@ -2,8 +2,6 @@
 include("config.php"); 
 include("functions.php");
 ?>
-
-<!DOCTYPE html>
   <html>
     <head>
       <!--Import Google Icon Font-->
