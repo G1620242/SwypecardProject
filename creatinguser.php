@@ -3,7 +3,6 @@ include("config.php");
 session_start();
 $info = "";
 if($_SERVER["REQUEST_METHOD"] == "POST") {
-// username and password sent from form
 
     $myfirstname = mysqli_real_escape_string($conn,$_POST["first_name"]);
     $mylastname = mysqli_real_escape_string($conn,$_POST["last_name"]);
