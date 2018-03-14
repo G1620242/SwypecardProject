@@ -67,6 +67,8 @@ include("functions.php");
         
        <div class="container">
         <h3>Support Board</h3>
+           <br>
+           <?php echo $info; ?>
         <form action="">
                 <table class="table table-striped">
 
@@ -85,8 +87,45 @@ include("functions.php");
 
                 </table>
             </form> 
-        
-        
+ <?php       
+    $info = "";
+        if($_SERVER["REQUEST_METHOD"] == "POST") {
+
+    $author = mysqli_real_escape_string($conn,$_POST["author"]);
+    $message = mysqli_real_escape_string($conn,$_POST["message"]);
+   
+   
+
+    $sql = "INSERT INTO message (author, message)
+    VALUES ('$author', '$message')";
+    if (mysqli_query($conn, $sql)) {
+        header("Location: chatroom.php")
+        $info = "Message Added Successfully";
+    } else {
+        $info ="Unable to Add Message";
+    }
+}
+
+?>
+                    <form class="col s4" method="post">
+               <div class="row">
+             <div class="input-field col s12">
+              <input name="author" type="text" class="validate">
+              <label for="author">Author</label>
+            </div>
+        </div>
+            <div class="row">
+            <div class="input-field col s12">
+              <input name="message" type="text" class="validate">
+              <label for="message">message</label>
+            </div>
+          </div>
+
+          <!--SUBMIT BUTTON-->
+          <button class="btn waves-effect waves-light" type="submit" name="Submit">Submit
+        <i class="material-icons right">send</i>
+      </button>
+        </form>
         
 
         </div> 
