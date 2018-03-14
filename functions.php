@@ -27,7 +27,7 @@ while($row = fetch_array($query)) {
 $message = <<<DELIMETER
                 <tr>
                 <td>{$row['author']}</td>
-                <td>£{$row['message']}</td>
+                <td>{$row['message']}</td>
 DELIMETER;
 
 

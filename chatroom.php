@@ -86,23 +86,23 @@ include("functions.php");
                 </table>
             </form> 
  <?php       
-  //  $info = "";
-//        if($_SERVER["REQUEST_METHOD"] == "POST") {
+    $info = "";
+        if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-//    $author = mysqli_real_escape_string($conn,$_POST["author"]);
-//    $message = mysqli_real_escape_string($conn,$_POST["message"]);
+    $author = mysqli_real_escape_string($conn,$_POST["author"]);
+    $message = mysqli_real_escape_string($conn,$_POST["message"]);
    
    
 
-//    $sql = "INSERT INTO message (author, message)
-//    VALUES ('$author', '$message')";
-//    if (mysqli_query($conn, $sql)) {
-//        header("Location: chatroom.php")
-//        $info = "Message Added Successfully";
-//    } else {
-//        $info ="Unable to Add Message";
-//    }
-//}
+    $sql = "INSERT INTO message (author, message)
+    VALUES ('$author', '$message')";
+    if (mysqli_query($conn, $sql)) {
+        header("Location: chatroom.php")
+        $info = "Message Added Successfully";
+    } else {
+        $info ="Unable to Add Message";
+    }
+}
 ?>
                     <form class="col s4" method="post">
                <div class="row">
