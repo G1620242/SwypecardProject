@@ -10,48 +10,13 @@
 
       <!--My Style Sheet-->
       <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
-      <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/> 
+      <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
     </head>
 
     <body>
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-        <script type="text/javascript">  
- 
-function update()
-{
-    $.post("chatroom.php", {}, function(data){ $("#screen").val(data);});  
- 
-    setTimeout('update()', 1000);
-}
- 
-$(document).ready(
- 
-function() 
-    {
-     update();
- 
-     $("#button").click(    
-      function() 
-      {         
-       $.post("chatroom.php", 
-    { message: $("#message").val()},
-    function(data){ 
-    $("#screen").val(data); 
-    $("#message").val("");
-    }
-    );
-      }
-     );
-    });
- 
- 
-</script>
-        
-        
-        
-        
       <script>$( document ).ready(function(){$(".button-collapse").sideNav();})</script>
       <script>$( document ).ready(function)(){$(".dropdown-button").dropdown();})</script>
       <script> $(document).ready(function(){ $('.collapsible').collapsible();});</script>
@@ -94,9 +59,7 @@ function()
   </nav>
         <!--Navbar End-->
         <br>
-<textarea id="screen" cols="40" rows="40"> </textarea> <br>  
-<input id="message" size="40">
-<button id="button"> Send </button>
+
            <div class="container">
 
        <img class="responsive-img" src="assets/HomePicture.jpg">
