@@ -39,21 +39,21 @@ include("userdetails.php");
     </ul>
     <nav class="nav">
     <div class="nav-wrapper container">
-      <a href="index.html" class="brand-logo"><img src ="assets/SwypeCard%202.jpg"></a>
+      <a href="loginindexpage.php" class="brand-logo"><img src ="assets/SwypeCard%202.jpg"></a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="loginabout.html">About</a></li>
             <li><a class = "dropdown-button" href="#" data-activates="dropdown1">Services <i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="booking.html">Book</a></li>
-            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="loginbooking.html">Book</a></li>
+            <li><a href="loginfaq.html">FAQ</a></li>
             <li><a href="sign_up.php">Sign Up</a></li>
             <li><a href="log_in.html">Log In</a></li>
       </ul>
          <ul class="side-nav" id="mobile-demo">
              <li><a href="loginabout.html">About</a></li>
              <li><a class = "dropdown-button" href="#" data-activates="dropdown2">Services <i class="material-icons right">arrow_drop_down</i></a></li>
-             <li><a href="booking.html">Book</a></li>
-             <li><a href="faq.html">FAQ</a></li>
+             <li><a href="loginbooking.html">Book</a></li>
+             <li><a href="loginfaq.html">FAQ</a></li>
              <li><a href="sign_up.php">Sign Up</a></li>
              <li><a href="log_in.html">Log In</a></li>
 
