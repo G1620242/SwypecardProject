@@ -1,27 +1,36 @@
-<!DOCTYPE html>
+<?php
+
+include("session.php");
+$sql = "SELECT FirstName, LastName, Username, Password, Address, DOB, Email, PhoneNumber FROM user WHERE CustomerID = '$_SESSION[login_user]'";
+$result = mysqli_query($conn,$sql);
+$row = mysqli_fetch_array($result,MYSQLI_ASSOC);
+mysqli_close($conn);
+?>
+
   <html>
     <head>
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+          
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
+      
       <!--My Style Sheet-->
       <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
       <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
     </head>
 
     <body>
+        
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script> $(document).ready(function(){$('.parallax').parallax();});</script>
+      <script> $(document).ready(function(){$('.carousel').carousel();});</script>
       <script>$( document ).ready(function(){$(".button-collapse").sideNav();})</script>
       <script>$( document ).ready(function(){$(".dropdown-button").dropdown();})</script>
         <!--Navbar Start"-->
-   <ul id="dropdown1" class="dropdown-content">
+    <ul id="dropdown1" class="dropdown-content">
         <li><a href="bus_services.html">Bus</a></li>
         <li class="divider"></li>
         <li><a href="train_services.html">Trains</a></li>
@@ -45,7 +54,7 @@
             <li><a href="booking.html">Book</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="sign_up.php">Sign Up</a></li>
-             <li><a href="log_in.php">Log In</a></li>
+            <li><a href="log_in.php">Log In</a></li>
       </ul>
          <ul class="side-nav" id="mobile-demo">
              <li><a href="about.html">About</a></li>
@@ -54,37 +63,32 @@
              <li><a href="faq.html">FAQ</a></li>
              <li><a href="sign_up.php">Sign Up</a></li>
              <li><a href="log_in.php">Log In</a></li>
+             
       </ul>
     </div>
   </nav>
         <!--Navbar End-->
-
-  <div class="section white">
-    <div class="row container">
-      <h2 class="parallaxheader">Train Services</h2>
-      <p class="grey-text text-darken-3 lighten-3">Below will be an indepth description on how the train services work and what you will have to do to use the card correctly when you wish to travel from train stations</p>
-    </div>
-  </div>
-  <div class="parallax-container">
-    <div class="parallax"><img src="assets/trainpic6.jpeg"></div>
-  </div>
-  <div class="row container">
-      <p class="grey-text text-darken-3 lighten-3">To pay for a train journey you will need to get a ticket by using your card on the scanner, that will allow you to buy a ticket for the train which you can use to leave and re-enter the station and use to board the train itself. The swypecard will be your secondary ticket and is an important component to making sure you safely book tickets if you use trains on a regular basis.  </p>
-    </div>
-     <div class="parallax-container">
-        <div class="parallax"><img src="assets/trainpic4.jpg"></div>
-  </div>
-  <div class="row container">
-      <p class="grey-text text-darken-3 lighten-3">The price for the tickets vary on the length of the journey and how many trains it will take, however the money will be pre paid for when you use the card to buy the tickets this means that you can easily make impromptu journeys without needing to carry money.</p>
-    </div>
-    <div class="parallax-container">
-    <div class="parallax"><img src="assets/trainpic5.jpeg"></div>
-    </div>
-     <div class="row container">
-         <p class="grey-text text-darken-3 lighten-3">You will need to keep swypecard with you after you have brought your ticket aswell this is important if you plan to take any other train journeys as you can pay for any other transportation you wish to take.</p>
+        <br>
+        
+           
+        <div class="section">
+        <div class="container">
+            <div class="col s12 m4 l8">
+            <h2 class="flow-text">Profile Details for <?php echo $row["username"]; ?></h2>
+            <p1 class="flow-text"><?php echo "Username: " . $row["username"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "FirstName: " . $row["first_name"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "LastName: " . $row["last_name"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "Address: " . $row["address"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "Date of Birth:" . $row["age"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "Phone Number: " . $row["phone_number"] . "</br>"?></p1>
+            <h2 class="flow-text"><a href="update.php">Update</a></h2>
+            </div>
+        </div>
     </div>
 
-         <footer class="page-footer">
+
+        
+        <footer class="page-footer">
           <div class="container">
             <div class="row">
               <div class="col l12 s12">
@@ -99,9 +103,10 @@
           </div>
           <div class="footer-copyright">
             <div class="container">
-            © 2017 SwypeCard - Benjamin Gittus
+             2017 SwypeCard - Benjamin Gittus
             </div>
           </div>
         </footer>
+            
     </body>
   </html>
