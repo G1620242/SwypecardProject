@@ -1,7 +1,7 @@
 <?php
 include("config.php"); 
 include("functions.php");
-include("session.php");
+include("userdetails.php");
 ?>
   <html>
     <head>
