@@ -82,7 +82,7 @@ include("userdetails.php");
                 <label>Phone Number: </label>
                 <input type = "text" name = "phone_number" value = "<?php echo $row["PhoneNumber"]?>" class = "box"/><br /><br />
                 <button class="waves-effect waves-light btn" type="submit" name="edit">Edit</button>
-                <button class="waves-effect waves-light btn" type="submit" name="removeaccount">Remove</button>
+                <button class="waves-effect waves-light btn" type="submit" name="remove">Remove</button>
             </form>
             <div><?php echo $info; ?></div>
         </div>

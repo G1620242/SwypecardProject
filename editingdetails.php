@@ -40,7 +40,7 @@ if(isset($_POST["edit"])){
     $info = updateUser($conn, $_SESSION["login_user"]);
     $row = displayUser($conn, $_SESSION["login_user"]);
 }
-else if (isset($_POST["removeaccount"])){
+else if (isset($_POST["remove"])){
     $info = deleteUser($conn, $_SESSION["login_user"]);
 }
 else
