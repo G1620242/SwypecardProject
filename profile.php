@@ -70,12 +70,12 @@ include("userdetails.php");
         <div class="container">
             <div class="col s12 m4 l8">
             <h2 class="flow-text">Profile Details for <?php echo $row["username"]; ?></h2>
-            <p1 class="flow-text"><?php echo "Username: " . $row["username"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "FirstName: " . $row["first_name"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "LastName: " . $row["last_name"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "Address: " . $row["address"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "Date of Birth:" . $row["age"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "Phone Number: " . $row["phone_number"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "Username: " . $row["Username"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "FirstName: " . $row["First_name"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "LastName: " . $row["Last_name"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "Address: " . $row["Address"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "Date of Birth:" . $row["Age"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "Phone Number: " . $row["PhoneNumber"] . "</br>"?></p1>
             <h2 class="flow-text"><a href="update.php">Update</a></h2>
             </div>
         </div>
