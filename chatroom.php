@@ -1,6 +1,7 @@
 <?php
 include("config.php"); 
 include("functions.php");
+include("session.php");
 ?>
   <html>
     <head>
@@ -47,16 +48,18 @@ include("functions.php");
             <li><a class = "dropdown-button" href="#" data-activates="dropdown1">Services <i class="material-icons right">arrow_drop_down</i></a></li>
             <li><a href="loginbooking.html">Book</a></li>
             <li><a href="loginfaq.html">FAQ</a></li>
-            <li><a href="sign_up.php">Sign Up</a></li>
-            <li><a href="log_in.php">Log In</a></li>
+            <li><a href="chatroom.php">Support</a></li>
+             <li><a href="profile.php">Profile</a></li>
+             <li><a href="log_out.php">Log out</a></li>
       </ul>
          <ul class="side-nav" id="mobile-demo">
              <li><a href="loginabout.html">About</a></li>
              <li><a class = "dropdown-button" href="#" data-activates="dropdown2">Services <i class="material-icons right">arrow_drop_down</i></a></li>
              <li><a href="booking.html">Book</a></li>
              <li><a href="faq.html">FAQ</a></li>
-             <li><a href="sign_up.php">Sign Up</a></li>
-             <li><a href="log_in.php">Log In</a></li>
+             <li><a href="chatroom.php">Support</a></li>
+             <li><a href="profile.php">Profile</a></li>
+             <li><a href="log_out.php">Log out</a></li>
       </ul>
     </div>
   </nav>
@@ -107,7 +110,7 @@ include("functions.php");
                     <form class="col s4" method="post">
                <div class="row">
              <div class="input-field col s12">
-              <input name="author" type="text" class="validate" required>
+              <input name="author" type="text" class="validate" required value="<?php echo $row["username"]?>">
               <label for="author">Author</label>
             </div>
         </div>
