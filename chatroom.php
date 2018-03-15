@@ -107,13 +107,13 @@ include("functions.php");
                     <form class="col s4" method="post">
                <div class="row">
              <div class="input-field col s12">
-              <input name="author" type="text" class="validate">
+              <input name="author" type="text" class="validate" required>
               <label for="author">Author</label>
             </div>
         </div>
             <div class="row">
             <div class="input-field col s12">
-              <input name="message" type="text" class="validate">
+              <input name="message" type="text" class="validate"required>
               <label for="message">message</label>
             </div>
           </div>
