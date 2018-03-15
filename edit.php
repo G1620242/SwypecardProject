@@ -68,7 +68,7 @@ include("userdetails.php");
            
         <div class="section">
         <div class="container">
-            <form action = "" method = "post">
+            <form action = "" method = "edit">
                 <label>Username : </label>
                 <input type = "text" name = "username" value = "<?php echo $row["Username"]?>" class = "box"/><br /><br />
                 <label>First Name :</label>
@@ -81,8 +81,8 @@ include("userdetails.php");
                 <input type = "text" name = "age" value = "<?php echo $row["DOB"]?>" class = "box"/><br /><br />
                 <label>Phone Number: </label>
                 <input type = "text" name = "phone_number" value = "<?php echo $row["PhoneNumber"]?>" class = "box"/><br /><br />
-                <button class="waves-effect waves-light btn" type="submit" name="update">Edit</button>
-                <button class="waves-effect waves-light btn" type="submit" name="delete">Delete</button>
+                <button class="waves-effect waves-light btn" type="submit" name="edit">Edit</button>
+                <button class="waves-effect waves-light btn" type="submit" name="removeaccount">Remove</button>
             </form>
             <div><?php echo $info; ?></div>
         </div>
