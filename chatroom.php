@@ -110,7 +110,7 @@ include("userdetails.php");
                     <form class="col s4" method="post">
                <div class="row">
              <div class="input-field col s12">
-              <input name="author" type="text" class="validate" required value="<?php echo $row["username"]?>">
+              <input name="author" type="text" class="validate" required value="<?php echo $row["Username"]?>">
               <label for="author">Author</label>
             </div>
         </div>
