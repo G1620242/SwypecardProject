@@ -68,7 +68,7 @@ include("userdetails.php");
            
         <div class="section">
         <div class="container">
-            <form action = "" method = "edit">
+            <form action = "" method = "post">
                 <label>Username : </label>
                 <input type = "text" name = "username" value = "<?php echo $row["Username"]?>" class = "box"/><br /><br />
                 <label>First Name :</label>
