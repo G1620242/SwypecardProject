@@ -68,18 +68,25 @@ include("userdetails.php");
            
         <div class="section">
         <div class="container">
-            <div class="col s12 m4 l8">
-            <h2 class="flow-text">Details - <?php echo $row["Username"]; ?></h2>
-            <p1 class="flow-text"><?php echo "Username: " . $row["Username"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "FirstName: " . $row["FirstName"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "LastName: " . $row["LastName"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "Address: " . $row["Address"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "Date of Birth:" . $row["DOB"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "Phone Number: " . $row["PhoneNumber"] . "</br>"?></p1>
-            <h2 class="flow-text"><a href="edit.php">Edit</a></h2>
-            </div>
+            <form action = "" method = "post">
+                <label>Username : </label>
+                <input type = "text" name = "username" value = "<?php echo $row["Username"]?>" class = "box"/><br /><br />
+                <label>First Name :</label>
+                <input type = "text" name = "first_name" value = "<?php echo $row["FirstName"]?>" class = "box"/><br /><br />
+                <label>Last Name :</label>
+                <input type = "text" name = "last_name" value = "<?php echo $row["LastName"]?>" class = "box"/><br /><br />
+                <label>Address :</label>
+                <input type = "text" name = "address" value = "<?php echo $row["Address"]?>" class = "box"/><br /><br />
+                <label>Age : </label>
+                <input type = "text" name = "age" value = "<?php echo $row["DOB"]?>" class = "box"/><br /><br />
+                <label>Phone Number: </label>
+                <input type = "text" name = "phone_number" value = "<?php echo $row["PhoneNumber"]?>" class = "box"/><br /><br />
+                <button class="waves-effect waves-light btn" type="submit" name="update">Edit</button>
+                <button class="waves-effect waves-light btn" type="submit" name="delete">Delete</button>
+            </form>
+            <div><?php echo $info; ?></div>
         </div>
-    </div>
+</div>
 
 
         
