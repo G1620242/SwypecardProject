@@ -2,7 +2,7 @@
 include("session.php");
 $info ="";
 function displayUser($conn, $login_user) {
-    $sql = "SELECT FirstName, LastName, Username, Address, DOB, PhoneNumber, FROM user
+    $sql = "SELECT FirstName, LastName, Username, Password, Address, DOB, Email, PhoneNumber, FROM user
     WHERE CustomerID = '$login_user' ";
     $result = mysqli_query($conn,$sql);
     $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
