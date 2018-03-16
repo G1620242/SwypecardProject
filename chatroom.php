@@ -33,14 +33,14 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
         <li class="divider"></li>
         <li><a href="logintrain_services.html">Trains</a></li>
         <li class="divider"></li>
-        <li><a href="taxi_services.html">Taxi</a></li>
+        <li><a href="logintaxi_services.html">Taxi</a></li>
     </ul>
     <ul id="dropdown2" class="dropdown-content">
         <li><a href="loginbus_services.html">Bus</a></li>
         <li class="divider"></li>
         <li><a href="logintrain_services.html">Trains</a></li>
         <li class="divider"></li>
-        <li><a href="taxi_services.html">Taxi</a></li>
+        <li><a href="logintaxi_services.html">Taxi</a></li>
     </ul>
     <nav class="nav">
     <div class="nav-wrapper container">
