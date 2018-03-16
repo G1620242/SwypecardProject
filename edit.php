@@ -1,5 +1,4 @@
 <?php
-include("userdetails.php");
 include("editingdetails.php");
 ?>
 
