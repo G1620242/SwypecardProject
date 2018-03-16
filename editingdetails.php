@@ -36,11 +36,11 @@ header("Location: log_out.php");
 }
 return $info;
 }
-if(isset($_POST["edit"])){
+if(isset($_POST["update"])){
     $info = updateUser($conn, $_SESSION["login_user"]);
     $row = displayUser($conn, $_SESSION["login_user"]);
 }
-else if (isset($_POST["remove"])){
+else if (isset($_POST["delete"])){
     $info = deleteUser($conn, $_SESSION["login_user"]);
 }
 else
