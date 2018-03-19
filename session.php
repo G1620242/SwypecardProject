@@ -3,7 +3,7 @@
     session_start();
 
     $user_check = $_SESSION["login_user"];
-    $sql = "select CustomerID from user where CustomerID = '$user_check';";
+    $sql = "select CustomerID from user where CustomerID = '$user_check' ";
     $ses_sql = mysqli_query($conn, $sql);
 
     $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
