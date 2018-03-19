@@ -1,6 +1,7 @@
 <?php
 include("session.php");
 $info ="";
+$login_user = $_SESSION["login_user"];
 function displayUser($conn, $login_user) {
     $sql = "SELECT FirstName, LastName, Username, Password, Address, DOB, Email, PhoneNumber, FROM user
     WHERE CustomerID = '$login_user' ";
