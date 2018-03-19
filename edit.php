@@ -24,7 +24,7 @@ function updateUser($conn, $login_user) {
     $myDOB = mysqli_real_escape_string($conn,$_POST["age"]);
     $myphonenumber = mysqli_real_escape_string($conn,$_POST["phone_number"]);
 
-$sql = "UPDATE user SET FirstName = '$myfirstname', LastName = '$mylastname', Username = '$myusername', Address = '$myaddress', DOB = '$myDOB' PhoneNumber = '$myphonenumber' WHERE CustomerID = '$_SESSION[login_user]' ";
+$sql = "UPDATE user SET FirstName, LastName, Username, DOB, PhoneNumber VALUES '$myfirstname', '$mylastname', '$myusername', '$myDOB', '$myphonenumber' WHERE CustomerID = '$_SESSION[login_user]' ";
 if (mysqli_query($conn, $sql)) {
     $info = "Updated ";
     header("Location: profile.php");
