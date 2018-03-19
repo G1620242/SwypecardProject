@@ -8,16 +8,16 @@ include("userdetails.php");
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-          
+
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      
+
       <!--My Style Sheet-->
       <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
       <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
     </head>
 
     <body>
-        
+
       <!--Import jQuery before materialize.js-->
       <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
@@ -60,23 +60,23 @@ include("userdetails.php");
              <li><a href="chatroom.php">Support</a></li>
              <li><a href="profile.php">Profile</a></li>
              <li><a href="log_out.php">Log out</a></li>
-             
+
       </ul>
     </div>
   </nav>
         <!--Navbar End-->
         <br>
-        
-           
+
+
         <div class="section">
         <div class="container">
             <div class="col s12 m4 l8">
             <h2 class="flow-text">Details - <?php echo $row["Username"]; ?></h2>
             <p1 class="flow-text"><?php echo "Username: " . $row["Username"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "FirstName: " . $row["FirstName"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "LastName: " . $row["LastName"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "First Name: " . $row["FirstName"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "Last Name: " . $row["LastName"] . "</br>"?></p1>
             <p1 class="flow-text"><?php echo "Address: " . $row["Address"] . "</br>"?></p1>
-            <p1 class="flow-text"><?php echo "Date of Birth:" . $row["DOB"] . "</br>"?></p1>
+            <p1 class="flow-text"><?php echo "Date of Birth: " . $row["DOB"] . "</br>"?></p1>
             <p1 class="flow-text"><?php echo "Phone Number: " . $row["PhoneNumber"] . "</br>"?></p1>
             <h2 class="flow-text"><a href="edit.php">Edit</a></h2>
             </div>
@@ -84,7 +84,7 @@ include("userdetails.php");
     </div>
 
 
-        
+
         <footer class="page-footer">
           <div class="container">
             <div class="row">
@@ -104,6 +104,6 @@ include("userdetails.php");
             </div>
           </div>
         </footer>
-            
+
     </body>
   </html>
