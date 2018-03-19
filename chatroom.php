@@ -1,5 +1,5 @@
 <?php
-include("config.php"); 
+include("config.php");
 include("functions.php");
 include("sessions.php");
 $sql = "SELECT Username FROM user WHERE CustomerID = '$_SESSION[login_user]'";
@@ -7,7 +7,7 @@ $result = mysqli_query($conn,$sql);
 $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 ?>
   <html>
-    <head>
+    <head> 
       <!--Import Google Icon Font-->
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
@@ -67,8 +67,8 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     </div>
   </nav>
         <!--Navbar End-->
-        
-        
+
+
        <div class="container">
         <h3>Support Board</h3>
            <br>
@@ -90,15 +90,15 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
                     </tbody>
 
                 </table>
-            </form> 
- <?php       
+            </form>
+ <?php
     $info = "";
         if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $author = mysqli_real_escape_string($conn,$_POST["author"]);
     $message = mysqli_real_escape_string($conn,$_POST["message"]);
-   
-   
+
+
 
     $sql = "INSERT INTO message (author, message)
     VALUES ('$author', '$message')";
@@ -129,15 +129,15 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
         <i class="material-icons right">send</i>
       </button>
         </form>
-        
 
-        </div> 
-        
-        
-        
-        
-        
-        
+
+        </div>
+
+
+
+
+
+
         <footer class="page-footer">
           <div class="container">
             <div class="row">
