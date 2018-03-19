@@ -5,13 +5,13 @@ $login_user = $_SESSION["login_user"];
 function displayUser($conn, $login_user) {
     $sql = "SELECT FirstName, LastName, Username, Password, Address, DOB, Email, PhoneNumber FROM user
     WHERE CustomerID = '$login_user' ";
-    $result = mysqli_query($conn,$sql);
+    $result = mysqli_query($conn, $sql);
     $resultCheck = mysqli_num_rows($result);
     if ($resultCheck > 0) {
       $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     } else {
 
-      echo "You're a failure!";
+      echo " Not Working Correctly";
     }
 
     return $row;
