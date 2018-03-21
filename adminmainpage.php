@@ -1,5 +1,5 @@
 <?php
-include("details.php");
+include("admindetails.php");
 ?>
   <html>
     <head>
