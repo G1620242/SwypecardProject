@@ -1,6 +1,5 @@
 <?php
 include("details.php");
-include("session.php");
 ?>
   <html>
     <head>
