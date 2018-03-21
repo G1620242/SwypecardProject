@@ -52,7 +52,7 @@ $info = "";
             <li><a href="booking.html">Book</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="sign_up.php">Sign Up</a></li>
-             <li><a href="log_in.php">Log In</a></li>
+            <li><a href="log_out.php">Log out</a></li>
       </ul>
          <ul class="side-nav" id="mobile-demo">
              <li><a href="about.html">About</a></li>
@@ -60,7 +60,7 @@ $info = "";
              <li><a href="booking.html">Book</a></li>
              <li><a href="faq.html">FAQ</a></li>
              <li><a href="sign_up.php">Sign Up</a></li>
-             <li><a href="log_in.php">Log In</a></li>
+             <li><a href="log_out.php">Log out</a></li>
       </ul>
     </div>
   </nav>
