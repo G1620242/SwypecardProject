@@ -23,11 +23,13 @@ $query = query("SELECT * FROM message");
 confirm($query);
 
 while($row = fetch_array($query)) {
+    $messAuthor = htmlspecialchars('$row['author']');
+    $messMess = htmlspecialchars('$row['message']);
 
 $message = <<<DELIMETER
                 <tr>
-                <td>{$row['author']}</td>
-                <td>{$row['message']}</td>
+                <td>{$messAuthor}</td>
+                <td>{$messMess}</td>
 DELIMETER;
 
 
