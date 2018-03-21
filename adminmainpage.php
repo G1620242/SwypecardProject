@@ -21,7 +21,7 @@ include("admindetails.php");
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script> $(document).ready(function(){$('.carousel').carousel();});</script>
       <script>$( document ).ready(function(){$(".button-collapse").sideNav();})</script>
-      <script>$( document ).ready(function)(){$(".dropdown-button").dropdown();})</script>
+      <script>$( document ).ready(function(){$(".dropdown-button").dropdown();})</script>
         <!--Navbar Start"-->
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="loginbus_services.html">Bus</a></li>

@@ -71,7 +71,7 @@ include("details.php");
         <div class="section">
         <div class="container">
             <div class="col s12 m4 l8">
-            <h2 class="flow-text">Details - <?php echo $row["Username"]; ?></h2>
+            
             <p1 class="flow-text"><?php echo "Username: " . $row["Username"] . "</br>"?></p1>
             <p1 class="flow-text"><?php echo "First Name: " . $row["FirstName"] . "</br>"?></p1>
             <p1 class="flow-text"><?php echo "Last Name: " . $row["LastName"] . "</br>"?></p1>
