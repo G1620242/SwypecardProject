@@ -128,7 +128,7 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
                 <form class="col s4" method="post">
                     <div class="row">
                         <div class="input-field col s12">
-                            <input name="author" type="text" class="validate" required value="<?php echo $Username;?>">
+                            <input name="author" type="text" class="validate" required value="<?php echo $myusername;?>">
                             <label for="author">Author</label>
                         </div>
                     </div>
