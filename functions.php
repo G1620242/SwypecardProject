@@ -26,8 +26,8 @@ while($row = fetch_array($query)) {
     $messAuthor = htmlspecialchars('$row['author']');
     $messMess = htmlspecialchars('$row['message']');
     echo "<tr>";
-    echo "<td>{$messAuthor}</td>";
-    echo "<td>{$messMess}</td>";
+    echo "<td>$messAuthor</td>";
+    echo "<td>$messMess</td>";
     echo "</tr>";
     // echo $message;
 }
