@@ -74,7 +74,7 @@ $info = "";
            <div class="col s12 m12 l12">
             <div class="card">
                <div class="card-content white-text">
-                   <h4>Please enter your ADMIN details</h4>
+                   <h4>Please enter your ADMIN details to reach the admin centre</h4>
                </div>
             </div>
          </div>
