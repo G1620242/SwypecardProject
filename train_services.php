@@ -14,12 +14,6 @@
     </head>
 
     <body>
-      <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-      <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script> $(document).ready(function(){$('.parallax').parallax();});</script>
-      <script>$( document ).ready(function(){$(".button-collapse").sideNav();})</script>
-      <script>$( document ).ready(function(){$(".dropdown-button").dropdown();})</script>
       
       <?php include("not_logged_in_navbar.php");?>
 
