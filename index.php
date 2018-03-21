@@ -15,7 +15,7 @@
 
     <body>
         
-      <?php include("config.php");?>
+      <?php include("not_logged_in_navbar.php");?>
         <br>
         
            <div class="container">
