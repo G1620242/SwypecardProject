@@ -72,11 +72,11 @@ include("admindetails.php");
                <div class="container center">
         <div class="col s12 m12 l3">
             <h1>Welcome <?php echo $row["Username"]; ?></h1>
-</div>
-</div>
-
-     
-
+        </div>
+        </div>
+      </div>
+       
+    
 
 
         <footer class="page-footer">
