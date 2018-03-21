@@ -23,8 +23,10 @@ $query = query("SELECT * FROM message");
 confirm($query);
 
 while($row = fetch_array($query)) {
-    $messAuthor = htmlspecialchars('$row['author']');
-    $messMess = htmlspecialchars('$row['message']');
+    $auth = $row['author'];
+    $mess = $row['message'];
+    $messAuthor = htmlspecialchars($auth);
+    $messMess = htmlspecialchars($mess);
     echo "<tr>";
     echo "<td>$messAuthor</td>";
     echo "<td>$messMess</td>";

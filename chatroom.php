@@ -1,7 +1,7 @@
 <?php
 include("config.php");
 include("functions.php");
-include("sessions.php");
+include("session.php");
 $sql = "SELECT Username FROM user WHERE CustomerID = '$_SESSION[login_user]'";
 $result = mysqli_query($conn,$sql);
 $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -88,7 +88,6 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
         <div class="container">
             <h3>Support Board</h3>
             <br>
-            <?php echo $info; ?>
             <form action="">
                 <table class="table table-striped">
 
