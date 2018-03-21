@@ -26,8 +26,8 @@ while($row = fetch_array($query)) {
 
 $message = <<<DELIMETER
                 <tr>
-                <td>{htmlspecialchars('$row['author']')}</td>
-                <td>{htmlspecialchars('$row['message']')}</td>
+                <td>{$row['author']}</td>
+                <td>{$row['message']}</td>
 DELIMETER;
 
 
