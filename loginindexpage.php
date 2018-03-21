@@ -1,5 +1,5 @@
 <?php
-include("userdetails.php");
+include("details.php");
 ?>
   <html>
     <head>

@@ -1,5 +1,5 @@
 <?php
-include("creatinguser.php");
+include("newuser.php");
 $info = "";
 ?>
   <html>
