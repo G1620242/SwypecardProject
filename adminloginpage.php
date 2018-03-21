@@ -82,14 +82,14 @@ $info = "";
          <form class="col s12" method="post">
                <div class="row">
              <div class="input-field col s12">
-              <input name="username" type="text" class="validate">
-              <label for="username">Username</label>
+              <input name="adminusername" type="text" class="validate">
+              <label for="adminusername">Username</label>
             </div>
         </div>
             <div class="row">
             <div class="input-field col s12">
-              <input name="password" type="password" class="validate">
-              <label for="password">Password</label>
+              <input name="adminpassword" type="password" class="validate">
+              <label for="adminpassword">Password</label>
             </div>
           </div>
 

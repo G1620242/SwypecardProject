@@ -1,10 +1,6 @@
 <?php
-include("config.php");
-include("userlogin.php");
-ini_set('display_errors', 1);
-$info = "";
+include("details.php");
 ?>
-
   <html>
     <head>
       <!--Import Google Icon Font-->
@@ -18,7 +14,6 @@ $info = "";
       <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
       <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
     </head>
-
     <body>
 
       <!--Import jQuery before materialize.js-->
@@ -29,14 +24,14 @@ $info = "";
       <script>$( document ).ready(function)(){$(".dropdown-button").dropdown();})</script>
         <!--Navbar Start"-->
     <ul id="dropdown1" class="dropdown-content">
-        <li><a href="bus_services.html">Bus</a></li>
+        <li><a href="loginbus_services.html">Bus</a></li>
         <li class="divider"></li>
         <li><a href="train_services.html">Trains</a></li>
         <li class="divider"></li>
         <li><a href="taxi_services.html">Taxi</a></li>
     </ul>
     <ul id="dropdown2" class="dropdown-content">
-        <li><a href="bus_services.html">Bus</a></li>
+        <li><a href="loginbus_services.html">Bus</a></li>
         <li class="divider"></li>
         <li><a href="train_services.html">Trains</a></li>
         <li class="divider"></li>
@@ -44,68 +39,74 @@ $info = "";
     </ul>
     <nav class="nav">
     <div class="nav-wrapper container">
-      <a href="index.html" class="brand-logo"><img src ="assets/SwypeCard%202.jpg"></a>
+      <a href="loginindexpage.php" class="brand-logo"><img src ="assets/SwypeCard%202.jpg"></a>
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="about.html">About</a></li>
+            <li><a href="loginabout.html">About</a></li>
             <li><a class = "dropdown-button" href="#" data-activates="dropdown1">Services <i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="booking.html">Book</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="sign_up.php">Sign Up</a></li>
-             <li><a href="log_in.php">Log In</a></li>
+            <li><a href="loginbooking.html">Book</a></li>
+            <li><a href="loginfaq.html">FAQ</a></li>
+            <li><a href="chatroom.php">Support</a></li>
+             <li><a href="profile.php">Profile</a></li>
+             <li><a href="log_out.php">Log out</a></li>
       </ul>
          <ul class="side-nav" id="mobile-demo">
-             <li><a href="about.html">About</a></li>
+             <li><a href="loginabout.html">About</a></li>
              <li><a class = "dropdown-button" href="#" data-activates="dropdown2">Services <i class="material-icons right">arrow_drop_down</i></a></li>
-             <li><a href="booking.html">Book</a></li>
-             <li><a href="faq.html">FAQ</a></li>
-             <li><a href="sign_up.php">Sign Up</a></li>
-             <li><a href="log_in.php">Log In</a></li>
+             <li><a href="loginbooking.html">Book</a></li>
+             <li><a href="loginfaq.html">FAQ</a></li>
+             <li><a href="chatroom.php">Support</a></li>
+             <li><a href="profile.php">Profile</a></li>
+             <li><a href="log_out.php">Log out</a></li>
+
       </ul>
     </div>
   </nav>
         <!--Navbar End-->
         <br>
 
-             <div class="container">
+           <div class="container">
 
        <img class="responsive-img" src="assets/HomePicture.jpg">
 
-           <div class="col s12 m12 l12">
+               <div class="container center">
+        <div class="col s12 m12 l3">
+            <h1>Welcome <?php echo $row["Username"]; ?></h1>
+        </div>
+    </div>
+
+        <div class="row">
+         <div class="col s12 m6 l6">
             <div class="card">
                <div class="card-content white-text">
-                   <h4>Please fill in the form to create an account and get access to other features</h4>
+                  <span class="card-title"><h3>News and Updates</h3></span>
+                  <p>Swypecard has now been launched for Trains, Buses and Taxis be sure to apply for the card on this website to get yours and try our service.</p>
                </div>
             </div>
          </div>
 
-         <form class="col s12" method="post">
-               <div class="row">
-             <div class="input-field col s12">
-              <input name="username" type="text" class="validate">
-              <label for="username">Username</label>
+         <div class="col s12 m6 l6">
+            <div class="card">
+               <div class="card-content white-text">
+                   <span class="card-title"><h3>Collaborations</h3></span>
+                  <p>We are working with the public transport companies Arriva, London Midland, National Express to make our services as efficient as possible.</p>
+               </div>
             </div>
-        </div>
-            <div class="row">
-            <div class="input-field col s12">
-              <input name="password" type="password" class="validate">
-              <label for="password">Password</label>
-            </div>
-          </div>
+         </div>
 
-          <!--SUBMIT BUTTON-->
-          <button class="btn waves-effect waves-light" type="submit" name="Submit">Submit
-        <i class="material-icons right">send</i>
-      </button>
-        </form>
-
-
-        
+      </div>
+       <!--Carousel Code-->
+    </div>
+    <div class="container">
+    <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="assets/Swypecard%20Product.jpg"></a>
+    <a class="carousel-item" href="#two!"><img src="assets/Swypecard%20Product%20back.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="assets/trainpic2.jpeg"></a>
+    <a class="carousel-item" href="#three!"><img src="assets/buspic2.jpg"></a>
+    <a class="carousel-item" href="#three!"><img src="assets/buspic3.jpeg"></a>
+  </div>
     </div>
 
-
-  </div>
-  <br>
 
         <footer class="page-footer">
           <div class="container">
