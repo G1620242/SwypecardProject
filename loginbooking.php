@@ -16,7 +16,7 @@ include("details.php");
     </head>
 
     <body>
-      
+
         <?php include("logged_in_navbar.php");?>
 
         <br>
@@ -35,42 +35,25 @@ include("details.php");
 
     <form class="col s12">
       <div class="row">
-       <div class="input-field col s12">
-          <input id="name" type="text" class="validate">
-          <label for="name">Name</label>
-        </div>
-
-      </div>
-      <div class="row">
+        <div class="input-field col s12">
+           <select>
+             <option value="" disabled selected>Card Colour?</option>
+             <option value="1">Red</option>
+             <option value="2">Blue</option>
+             <option value="3">Green</option>
+           </select>
+           <label>Materialize Select</label>
+         </div>
          <div class="input-field col s12">
-          <input id="address" type="text" class="validate">
-          <label for="address">Address</label>
+            <select>
+              <option value="" disabled selected>Design?</option>
+              <option value="1">Plain</option>
+              <option value="2">Carpet</option>
+            </select>
+            <label>Materialize Select</label>
+          </div>
         </div>
       </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="age" type="date" class="validate">
-        </div>
-      </div>
-      <div class="row">
-        <div class="input-field col s12">
-          <input id="email" type="email" class="validate">
-          <label for="email">Email</label>
-        </div>
-      </div>
-      <div class="row">
-      <div class="input-field col s12">
-          <input id="phone_number" type="text" class="validate">
-          <label for="phone_number">Phone Number</label>
-        </div>
-      </div>
-    </form>
-     <div class="button">
-    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
-    <i class="material-icons right">send</i>
-  </button>
-        </div>
-  </div>
 
     <br>
 
