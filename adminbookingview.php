@@ -1,9 +1,6 @@
 <?php
-include("adminlogin.php");
-ini_set('display_errors', 1);
-$info = "";
+include("admindetails.php");
 ?>
-
   <html>
     <head>
       <!--Import Google Icon Font-->
@@ -17,52 +14,49 @@ $info = "";
       <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
       <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
     </head>
-
     <body>
 
-      <?php include("not_logged_in_navbar.php");?>
+     <?php include("admin_navbar.php");?>
 
         <br>
 
-             <div class="container">
-
+     <div class="container">
        <img class="responsive-img" src="assets/HomePicture.jpg">
+     </div>
 
-           <div class="col s12 m12 l12">
-            <div class="card">
-               <div class="card-content white-text">
-                   <h4>Please enter your ADMIN details to reach the admin centre</h4>
-               </div>
-            </div>
-         </div>
+     <div class="center">
+     <?php
 
-         <form class="col s12" method="post">
-               <div class="row">
-             <div class="input-field col s12">
-              <input name="adminusername" type="text" class="validate">
-              <label for="adminusername">Username</label>
-            </div>
-        </div>
-            <div class="row">
-            <div class="input-field col s12">
-              <input name="adminpassword" type="password" class="validate">
-              <label for="adminpassword">Password</label>
-            </div>
-          </div>
+       $sql = "SELECT booking.BookingID, booking.ColourChoice, booking.DesignChoice, booking.StyleChoice, user.Username FROM booking INNER JOIN user ON user.CustomerID = booking.CustomerID ORDER BY BookingID DESC";
+       $res = mysqli_query($conn, $sql);
 
-          <!--SUBMIT BUTTON-->
-          <button class="btn waves-effect waves-light" type="submit" name="Submit">Submit
-        <i class="material-icons right">send</i>
-      </button>
-        </form>
+       $bookconfirm = "";
 
+       if (mysqli_num_rows($res) > 0) {
+           while($row = mysqli_fetch_assoc($res)) {
+               $bookid = $row['BookingID'];
+               $colourchoice = $row['ColourChoice'];
+               $designchoice = $row['DesignChoice'];
+               $stylechoice = $row['StyleChoice'];
+               $username = $row['Username'];
 
+               $bookconfirm .= "<div class='row'>
+                           <div class='col s12 m12 l12'>
+                             <div class='container'>
+                               <a href='adminbookingview.php?bookid=$bookid'></a>
+                               <p>$username Chose $colourchoice $designchoice $stylechoice </p>
+                               <div><a href='adminbookingdelete.php?bookid=$bookid'>Delete</a></div>
+                             </div>
+                           </div>
+                         </div>";
+           }
+           echo $bookconfirm;
+       } else {
+           echo "There are no current bookings available.";
+       }
+     ?>
 
-    </div>
-
-
-  </div>
-  <br>
+     </div>
 
         <footer class="page-footer">
           <div class="container">

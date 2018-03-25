@@ -2,7 +2,7 @@
 include("config.php");
 include("functions.php");
 include("session.php");
-$sql = "SELECT Username FROM user WHERE CustomerID = '$_SESSION[login_user]'";
+//$sql = "SELECT Username FROM user WHERE CustomerID = '$_SESSION[login_user]'";
 $result = mysqli_query($conn,$sql);
 $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 ?>
@@ -110,15 +110,14 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $info = "";
         if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $author = mysqli_real_escape_string($conn,$_POST["author"]);
     $message = mysqli_real_escape_string($conn,$_POST["message"]);
+    $custid = $_SESSION['login_user'];
 
 
-
-    $sql = "INSERT INTO message (author, message)
-    VALUES ('$author', '$message')";
+    $sql = "INSERT INTO message (message, CustomerID)
+    VALUES ('$message', '$custid')";
     if (mysqli_query($conn, $sql)) {
-        header("Location: chatroom.php");
+        // header("Location: chatroom.php");
         $info = "Message Added Successfully";
     } else {
         $info ="Unable to Add Message";
@@ -126,12 +125,6 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 }
 ?>
                 <form class="col s4" method="post">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input name="author" type="text" class="validate" required value="<?php echo $myusername;?>">
-                            <label for="author">Author</label>
-                        </div>
-                    </div>
                     <div class="row">
                         <div class="input-field col s12">
                             <input name="message" type="text" class="validate" required>

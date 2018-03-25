@@ -19,11 +19,11 @@ function fetch_array($result) {
 
 function message() {
 
-$query = query("SELECT * FROM message");
+$query = query("SELECT message.MessageID, message.message, user.Username FROM message INNER JOIN user ON user.CustomerID = message.CustomerID");
 confirm($query);
 
 while($row = fetch_array($query)) {
-    $auth = $row['author'];
+    $auth = $row['Username'];
     $mess = $row['message'];
     $messAuthor = htmlspecialchars($auth);
     $messMess = htmlspecialchars($mess);

@@ -1,5 +1,5 @@
 <?php
-include("details.php");
+include("bookingchoice.php");
 ?>
   <html>
     <head>
@@ -13,6 +13,7 @@ include("details.php");
       <!--My Style Sheet-->
       <link href="css/myStyleSheet.css" type="text/css" rel="stylesheet"/>
       <link type="text/css" rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css"/>
+
     </head>
 
     <body>
@@ -33,29 +34,37 @@ include("details.php");
             </div>
          </div>
 
-    <form class="col s12">
+    <form class="col s12" method="post">
       <div class="row">
         <div class="input-field col s12">
-           <select>
-             <option value="" disabled selected>Card Colour?</option>
-             <option value="1">Red</option>
-             <option value="2">Blue</option>
-             <option value="3">Green</option>
-           </select>
-           <label>Materialize Select</label>
-         </div>
-         <div class="input-field col s12">
-            <select>
-              <option value="" disabled selected>Design?</option>
-              <option value="1">Plain</option>
-              <option value="2">Carpet</option>
+            <select name="colourchoice" required>
+                <option value="" disabled selected>Card Colour?</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
             </select>
-            <label>Materialize Select</label>
-          </div>
+            <label data-error="wrong" data-success="right" ></label>
         </div>
-      </div>
+        <div class="input-field col s12">
+            <select name="designchoice" required>
+                <option value="" disabled selected>Card Design?</option>
+                <option value="plain">Plain</option>
+                <option value="carpet">Carpet</option>
+            </select>
+            <label data-error="wrong" data-success="right" ></label>
+        </div>
+        <div class="input-field col s12">
+            <select name="stylechoice" required>
+                <option value="" disabled selected>Information Layout?</option>
+                <option value="right">Right</option>
+                <option value="left">Left</option>
+            </select>
+            <label data-error="wrong" data-success="right" ></label>
+        </div>
+        </div>
+        <button class="waves-effect waves-light btn" name="Submit" type="submit">Submit</button>
     </form>
-
+</div>
     <br>
 
         <footer class="page-footer">
@@ -77,6 +86,5 @@ include("details.php");
             </div>
           </div>
         </footer>
-
     </body>
   </html>

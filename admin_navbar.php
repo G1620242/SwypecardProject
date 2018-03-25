@@ -9,12 +9,13 @@
     <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
       <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="newadminpage.php">Create Admin</a></li>
-           
+            <li><a href="adminbookingview.php">View Bookings</a></li>
+            <li><a href="log_out.php">Log out</a></li>
       </ul>
          <ul class="side-nav" id="mobile-demo">
          <li><a href="newadminpage.php">Create Admin</a></li>
-             
-             
+
+
       </ul>
     </div>
   </nav>

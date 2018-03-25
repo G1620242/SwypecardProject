@@ -1,16 +1,17 @@
-<?php 
-include("config.php");
-session_start();
+<?php
+include ('session.php');
 $info = "";
 if($_SERVER["REQUEST_METHOD"] == "POST") {
 
-    $colourchoice = mysqli_real_escape_string($conn,$_POST["colour_choice"]);
-    $designchoice = mysqli_real_escape_string($conn,$_POST["design_choice"]);
+    $colourchoice = mysqli_real_escape_string($conn,$_POST["colourchoice"]);
+    $designchoice = mysqli_real_escape_string($conn,$_POST["designchoice"]);
+    $stylechoice = mysqli_real_escape_string($conn,$_POST["stylechoice"]);
+
+    $custid = $_SESSION['login_user'];
 
 
-
-    $sql = "INSERT INTO user (FirstName, LastName, Username, Password, Address, DOB, Email, PhoneNumber)
-    VALUES ('$myfirstname', '$mylastname', '$myusername', '$mypassword', '$myaddress', '$myDOB', '$myemail', '$myphonenumber')";
+    $sql = "INSERT INTO booking (ColourChoice, DesignChoice, StyleChoice, CustomerID)
+    VALUES ('$colourchoice', '$designchoice', ' $stylechoice', '$custid')";
     if (mysqli_query($conn, $sql)) {
         $info = "User Added";
     } else {
