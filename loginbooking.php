@@ -54,6 +54,7 @@ include("details.php");
           </div>
         </div>
       </div>
+    </form>
 
     <br>
 
