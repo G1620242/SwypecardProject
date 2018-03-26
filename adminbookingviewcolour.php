@@ -28,8 +28,8 @@ include("admindetails.php");
        <div class='col s12 m12 l12'>
          <div class='container'>
          <table>
-           <tr><th><a href="adminbookingview.php">Username</a></th><th><a href="adminbookingviewcolour.php">ColourChoice</a>
-           </th><th><a href="adminbookingviewdesign.php">DesignChoice</a></th><th><a href="adminbookingviewstyle.php">StyleChoice</a></th><th></th></tr>
+           <tr><th><a href="adminbookingview.php">Username</a></th><th><a href="adminbookingviewcolour.php">Colour Choice</a>
+           </th><th><a href="adminbookingviewdesign.php">Design Choice</a></th><th><a href="adminbookingviewstyle.php">Style Choice</a></th><th></th></tr>
      <?php
 
        $sql = "SELECT booking.BookingID, booking.ColourChoice, booking.DesignChoice, booking.StyleChoice, user.Username FROM booking INNER JOIN user ON user.CustomerID = booking.CustomerID ORDER BY ColourChoice";
