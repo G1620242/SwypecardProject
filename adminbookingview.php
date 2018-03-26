@@ -43,9 +43,14 @@ include("admindetails.php");
                $bookconfirm .= "<div class='row'>
                            <div class='col s12 m12 l12'>
                              <div class='container'>
+                             <table>
+                             <tr><th>Username</th><th>ColourChoice</th><th>DesignChoice</th><th>StyleChoice</th><th></th></tr>
+                             <tr><td>$username</td><td>$colourchoice</td><td>$designchoice</td><td>$stylechoice</td><a href='adminbookingdelete.php?bookid=$bookid'>Delete</a><td></td></tr>
+                            </table>
                                <a href='adminbookingview.php?bookid=$bookid'></a>
                                <p>$username Chose $colourchoice $designchoice $stylechoice </p>
                                <div><a href='adminbookingdelete.php?bookid=$bookid'>Delete</a></div>
+
                              </div>
                            </div>
                          </div>";
