@@ -118,7 +118,7 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     VALUES ('$message', '$custid')";
     if (mysqli_query($conn, $sql)) {
         $info = "Message Added Successfully";
-        header("Location: chatroom.php");
+        echo "<meta http-equiv='refresh' content='0'>";
     } else {
         $info ="Unable to Add Message";
         header("Location: chatroom.php");
