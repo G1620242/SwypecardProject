@@ -19,7 +19,7 @@ function fetch_array($result) {
 
 function message() {
 
-$query = query("SELECT message.MessageID, message.message, user.Username FROM message INNER JOIN user ON user.CustomerID = message.CustomerID ORDER BY MessageID ASC");
+$query = query("SELECT message.MessageID, message.message, user.Username FROM message INNER JOIN user ON user.CustomerID = message.CustomerID ORDER BY MessageID DESC");
 confirm($query);
 
 while($row = fetch_array($query)) {
