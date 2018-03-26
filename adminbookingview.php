@@ -25,6 +25,10 @@ include("admindetails.php");
      </div>
 
      <div class="center">
+       <div class='col s12 m12 l12'>
+         <div class='container'>
+         <table>
+         <tr><th>Username</th><th>ColourChoice</th><th>DesignChoice</th><th>StyleChoice</th><th></th></tr>
      <?php
 
        $sql = "SELECT booking.BookingID, booking.ColourChoice, booking.DesignChoice, booking.StyleChoice, user.Username FROM booking INNER JOIN user ON user.CustomerID = booking.CustomerID ORDER BY BookingID DESC";
@@ -41,23 +45,21 @@ include("admindetails.php");
                $username = $row['Username'];
 
                $bookconfirm .= "<div class='row'>
-                           <div class='col s12 m12 l12'>
-                             <div class='container'>
-                             <table>
-                             <tr><th>Username</th><th>ColourChoice</th><th>DesignChoice</th><th>StyleChoice</th><th></th></tr>
-                             <tr><td>$username</td><td>$colourchoice</td><td>$designchoice</td><td>$stylechoice</td><td><a href='adminbookingdelete.php?bookid=$bookid'>Delete</a></td></tr>
-                            </table>
-                               <a href='adminbookingview.php?bookid=$bookid'></a>
 
-                             </div>
-                           </div>
-                         </div>";
+                             <tr><td>$username</td><td>$colourchoice</td><td>$designchoice</td><td>$stylechoice</td><td><a href='adminbookingdelete.php?bookid=$bookid'>Delete</a></td></tr>
+                               <a href='adminbookingview.php?bookid=$bookid'></a>
+              ";
            }
            echo $bookconfirm;
        } else {
            echo "There are no current bookings available.";
        }
      ?>
+   </table>
+
+ </div>
+</div>
+</div>
 
      </div>
 
