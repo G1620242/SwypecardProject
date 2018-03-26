@@ -31,6 +31,7 @@ while($row = fetch_array($query)) {
     echo "<td>$messAuthor</td>";
     echo "<td>$messMess</td>";
     echo "</tr>";
+    header("Location: chatroom.php");
     // echo $message;
 }
 
