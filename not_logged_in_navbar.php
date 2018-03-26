@@ -25,7 +25,6 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="about.php">About</a></li>
             <li><a class = "dropdown-button" href="#" data-activates="dropdown1">Services <i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="booking.php">Book</a></li>
             <li><a href="faq.php">FAQ</a></li>
             <li><a href="sign_up.php">Sign Up</a></li>
             <li><a href="log_in.php">Log In</a></li>
@@ -33,11 +32,10 @@
          <ul class="side-nav" id="mobile-demo">
              <li><a href="about.php">About</a></li>
              <li><a class = "dropdown-button" href="#" data-activates="dropdown2">Services <i class="material-icons right">arrow_drop_down</i></a></li>
-             <li><a href="booking.php">Book</a></li>
              <li><a href="faq.php">FAQ</a></li>
              <li><a href="sign_up.php">Sign Up</a></li>
              <li><a href="log_in.php">Log In</a></li>
-             
+
       </ul>
     </div>
   </nav>
