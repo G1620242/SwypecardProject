@@ -40,7 +40,7 @@ while($row = fetch_array($query)) {
 
 
 }
-}
+
 
 // <td><img src="{$row['profile_pic']}"></td>
 
