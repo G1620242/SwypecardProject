@@ -117,10 +117,12 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     $sql = "INSERT INTO message (message, CustomerID)
     VALUES ('$message', '$custid')";
     if (mysqli_query($conn, $sql)) {
-        // header("Location: chatroom.php");
         $info = "Message Added Successfully";
+        header("Location: chatroom.php");
     } else {
         $info ="Unable to Add Message";
+        header("Location: chatroom.php");
+
     }
 }
 ?>
@@ -133,7 +135,7 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
                     </div>
 
                     <!--SUBMIT BUTTON-->
-                    <button class="btn waves-effect waves-light" type="submit" name="Submit" href="chatroom.php">Submit
+                    <button class="btn waves-effect waves-light" type="submit" name="Submit">Submit
         <i class="material-icons right">send</i>
       </button>
                 </form>
