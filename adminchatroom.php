@@ -1,8 +1,7 @@
 <?php
 include("config.php");
 include("functions.php");
-include("session.php");
-
+include("adminsession.php");
 //$sql = "SELECT Username FROM user WHERE CustomerID = '$_SESSION[login_user]'";
 $result = mysqli_query($conn,$sql);
 $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -63,7 +62,7 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
         echo "<meta http-equiv='refresh' content='0'>";
     } else {
         $info ="Unable to Add Message";
-        header("Location: chatroom.php");
+        header("Location: adminchatroom.php");
 
     }
 }
