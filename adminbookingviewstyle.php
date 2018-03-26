@@ -29,7 +29,7 @@ include("admindetails.php");
          <div class='container'>
          <table>
          <tr><th><a href="adminbookingview.php">Username</a></th><th><a href="adminbookingviewcolour.php">ColourChoice</a>
-         </th><th><a href="adminbookingviewdesign">DesignChoice</a></th><th><a href="adminbookingviewstyle">StyleChoice</a></th><th></th></tr>
+         </th><th><a href="adminbookingviewdesign.php">DesignChoice</a></th><th><a href="adminbookingviewstyle.php">StyleChoice</a></th><th></th></tr>
      <?php
 
        $sql = "SELECT booking.BookingID, booking.ColourChoice, booking.DesignChoice, booking.StyleChoice, user.Username FROM booking INNER JOIN user ON user.CustomerID = booking.CustomerID ORDER BY StyleChoice";
