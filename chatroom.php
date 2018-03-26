@@ -133,7 +133,7 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
                     </div>
 
                     <!--SUBMIT BUTTON-->
-                    <button class="btn waves-effect waves-light" type="submit" name="Submit">Submit
+                    <button class="btn waves-effect waves-light" type="submit" name="Submit" href="chatroom.php">Submit
         <i class="material-icons right">send</i>
       </button>
                 </form>

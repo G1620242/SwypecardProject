@@ -33,7 +33,7 @@ while($row = fetch_array($query)) {
     echo "</tr>";
     // echo $message;
 }
-header("Location: chatroom.php");
+//header("Location: chatroom.php");
 
 
 
