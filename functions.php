@@ -19,22 +19,16 @@ function fetch_array($result) {
 
 function message() {
 
-  $query = query("SELECT message.MessageID, message.message, user.Username, admin.IconID, admin.Username FROM message INNER JOIN user ON user.CustomerID = message.CustomerID INNER JOIN admin ON message.IconID = admin.IconID ORDER BY MessageID DESC");
+  $query = query("SELECT message.MessageID, message.message, user.Username FROM message INNER JOIN user ON user.CustomerID = message.CustomerID ORDER BY MessageID DESC");
   confirm($query);
 
 while($row = fetch_array($query)) {
-    if($row['IconID'] == 1) {
-      $adminicon = "assets/adminicon.png";
-      $auth = $row['admin.Username'];
-    } else {
-      $auth = $row['user.Username'];
-    }
-    // $auth = $row['Username'];
+    $auth = $row['Username'];
     $mess = $row['message'];
     $messAuthor = htmlspecialchars($auth);
     $messMess = htmlspecialchars($mess);
     echo "<tr>";
-    echo "<td><img src='$adminicon'/>$messAuthor</td>";
+    echo "<td>$messAuthor</td>";
     echo "<td>$messMess</td>";
     echo "</tr>";
     // echo $message;
