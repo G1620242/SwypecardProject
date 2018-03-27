@@ -13,8 +13,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $myDOB = mysqli_real_escape_string($conn,$_POST["age"]);
     $myemail = mysqli_real_escape_string($conn,$_POST["email"]);
     $myphonenumber = mysqli_real_escape_string($conn,$_POST["phone_number"]);
-   
 
+//Inserts the form information into the user table
     $sql = "INSERT INTO User (FirstName, LastName, Username, Password, Address, DOB, Email, PhoneNumber)
     VALUES ('$myfirstname', '$mylastname', '$myusername', '$mypassword', '$myaddress', '$myDOB', '$myemail', '$myphonenumber')";
     if (mysqli_query($conn, $sql)) {

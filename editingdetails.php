@@ -16,6 +16,7 @@ function displayUser($conn, $login_user) {
 
     return $row;
 }
+// The function that sets the inforamtion of the logged in user to what has been entered on ther form in the edit page.
 function updateUser($conn, $login_user) {
     $myfirstname = mysqli_real_escape_string($conn,$_POST["first_name"]);
     $mylastname = mysqli_real_escape_string($conn,$_POST["last_name"]);
@@ -23,6 +24,7 @@ function updateUser($conn, $login_user) {
     $myaddress = mysqli_real_escape_string($conn,$_POST["address"]);
     $myDOB = mysqli_real_escape_string($conn,$_POST["age"]);
     $myphonenumber = mysqli_real_escape_string($conn,$_POST["phone_number"]);
+
 
 $sql = "UPDATE user SET FirstName = '$myfirstname', LastName = '$mylastname', Username = '$myusername', Address = '$myaddress', DOB = '$myDOB', PhoneNumber = '$myphonenumber' WHERE CustomerID = '$login_user' ";
 if (mysqli_query($conn, $sql)) {
@@ -33,6 +35,7 @@ if (mysqli_query($conn, $sql)) {
 }
 return $info;
 }
+
 function deleteUser($conn, $login_user) {
 $sql = "DELETE FROM user WHERE CustomerID = '$_SESSION[login_user]' ";
 if (mysqli_query($conn, $sql)) {
