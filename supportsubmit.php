@@ -8,7 +8,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $custid = $_SESSION['login_user'];
 
 
-    $sql = "INSERT INTO problem (problem,CustomerID)
+    $sql = "INSERT INTO problem (problem, CustomerID)
     VALUES ('$prob', '$custid')";
     if (mysqli_query($conn, $sql)) {
         $info = "Submitted";
