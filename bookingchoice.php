@@ -13,9 +13,9 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $sql = "INSERT INTO booking (ColourChoice, DesignChoice, StyleChoice, CustomerID)
     VALUES ('$colourchoice', '$designchoice', ' $stylechoice', '$custid')";
     if (mysqli_query($conn, $sql)) {
-        $info = "User Added";
+        $info = "Booked";
     } else {
-        $info ="Unable to Add";
+        $info ="Unable to Book";
     }
 }
  ?>
