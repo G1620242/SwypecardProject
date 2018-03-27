@@ -8,7 +8,7 @@
 
     $row = mysqli_fetch_array($ses_sql,MYSQLI_ASSOC);
 
-    if(!isset($_SESSION["login_user"])){
+    if(!isset($_SESSION["login_user"] || $_SESSION["login_admin"])){
     header("location: log_in.php");
     }
 ?>

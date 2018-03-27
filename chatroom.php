@@ -53,11 +53,15 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
         if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $message = mysqli_real_escape_string($conn,$_POST["message"]);
-    $custid = $_SESSION['login_user'];
+    if(isset($_SESSION['login_admin'])) {
+      $custid = $_SESSION['login_admin'];
+    } else {
+      $custid = $_SESSION['login_user'];
+    }
+    $iconID = $row['IconID'];
 
-
-    $sql = "INSERT INTO message (message, CustomerID)
-    VALUES ('$message', '$custid')";
+    $sql = "INSERT INTO message (message, CustomerID, IconID)
+    VALUES ('$message', '$custid', '$iconID')";
     if (mysqli_query($conn, $sql)) {
         $info = "Message Added Successfully";
         echo "<meta http-equiv='refresh' content='0'>";
