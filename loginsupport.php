@@ -1,5 +1,5 @@
 <?php
-include("chatroomsubmit.php");
+include("supportsubmit.php");
 ?>
   <html>
     <head>
