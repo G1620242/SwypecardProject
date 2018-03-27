@@ -43,10 +43,11 @@ include("admindetails.php");
                $probid = $row['ProblemID'];
                $prob = $row['problem'];
                $username = $row['Username'];
-
+               $email = $row['Email'];
+               $phonenumber = $row['PhoneNumber'];
                $probconfirm .= "<div class='row'>
 
-                             <tr><td>$username</td><td>$email</td><td>$phonenumber</td><td>$probid</td>
+                             <tr><td>$username</td><td>$email</td><td>$phonenumber</td><td>$prob</td>
               ";
            }
            echo $probconfirm;
