@@ -10,12 +10,14 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="newadminpage.php">Create Admin</a></li>
             <li><a href="adminbookingview.php">View Bookings</a></li>
-            <li><a href="adminchatroom.php">Chatroom</a></li>
+            <li><a href="adminsupportview.php">Support View</a></li>
             <li><a href="log_out.php">Log out</a></li>
       </ul>
          <ul class="side-nav" id="mobile-demo">
          <li><a href="newadminpage.php">Create Admin</a></li>
-
+         <li><a href="adminbookingview.php">View Bookings</a></li>
+         <li><a href="adminsupportview.php">Support View</a></li>
+         <li><a href="log_out.php">Log out</a></li>
 
       </ul>
     </div>
