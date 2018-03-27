@@ -19,6 +19,8 @@ include("details.php");
     <body>
 
     <?php include("logged_in_navbar.php");?>
+    
+    <br>
     <div class="container">
       <img class="responsive-img" src="assets/HomePicture.jpg">
     </div>
