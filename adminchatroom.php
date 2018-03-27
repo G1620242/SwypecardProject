@@ -1,8 +1,7 @@
 <?php
 include("config.php");
 include("functions.php");
-include("session.php");
-
+include("adminsession.php");
 //$sql = "SELECT Username FROM user WHERE CustomerID = '$_SESSION[login_user]'";
 $result = mysqli_query($conn,$sql);
 $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
@@ -23,7 +22,7 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
     </head>
 
     <body>
-        <?php include("logged_in_navbar.php");?>
+        <?php include("admin_navbar.php");?>
         <!--Navbar End-->
 
 
@@ -53,17 +52,17 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
         if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $message = mysqli_real_escape_string($conn,$_POST["message"]);
-    $custid = $_SESSION['login_user'];
-    $iconID = 0;
+    $custid = $_SESSION['login_admin'];
+    $iconID = 1;
 
     $sql = "INSERT INTO message (message, CustomerID, IconID)
-    VALUES ('$message', '$custid', '$iconID')";
+    VALUES ('$message', '$custid', '$IconID')";
     if (mysqli_query($conn, $sql)) {
         $info = "Message Added Successfully";
         echo "<meta http-equiv='refresh' content='0'>";
     } else {
         $info ="Unable to Add Message";
-        header("Location: chatroom.php");
+        header("Location: adminchatroom.php");
 
     }
 }
