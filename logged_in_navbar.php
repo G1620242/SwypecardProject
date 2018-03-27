@@ -26,8 +26,8 @@
       <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="loginabout.php">About</a></li>
             <li><a class = "dropdown-button" href="#" data-activates="dropdown1">Services <i class="material-icons right">arrow_drop_down</i></a></li>
-            <li><a href="loginbooking.php">Book</a></li>
             <li><a href="loginfaq.php">FAQ</a></li>
+            <li><a href="loginbooking.php">Book</a></li>
             <li><a href="chatroom.php">Chatroom</a></li>
              <li><a href="profile.php">Profile</a></li>
              <li><a href="log_out.php">Log out</a></li>
@@ -35,8 +35,8 @@
          <ul class="side-nav" id="mobile-demo">
              <li><a href="loginabout.php">About</a></li>
              <li><a class = "dropdown-button" href="#" data-activates="dropdown2">Services <i class="material-icons right">arrow_drop_down</i></a></li>
-             <li><a href="loginbooking.php">Book</a></li>
              <li><a href="loginfaq.php">FAQ</a></li>
+             <li><a href="loginbooking.php">Book</a></li>
              <li><a href="chatroom.php">Chatroom</a></li>
              <li><a href="profile.php">Profile</a></li>
              <li><a href="log_out.php">Log out</a></li>
