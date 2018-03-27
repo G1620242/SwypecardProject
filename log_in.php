@@ -50,7 +50,7 @@ $info = "";
               <label for="password">Password</label>
             </div>
           </div>
-
+          <button class="waves-effect waves-light btn"><a href="adminloginpage.php">Colour Choice</a></button>
           <!--SUBMIT BUTTON-->
           <button class="btn waves-effect waves-light" type="submit" name="Submit">Submit
         <i class="material-icons right">send</i>
