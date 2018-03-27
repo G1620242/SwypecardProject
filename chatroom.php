@@ -24,9 +24,11 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
     <body>
         <?php include("logged_in_navbar.php");?>
-        
+        <div class="container">
+          <img class="responsive-img" src="assets/HomePicture.jpg">
+        </div>
 
-
+<br>
         <div class="container">
             <h3>Support Board</h3>
             <br>
