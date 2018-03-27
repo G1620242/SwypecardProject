@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
     $sql = "INSERT INTO problem (problem,CustomerID)
-    VALUES ('$prob','$custid')";
+    VALUES ('$prob', '$custid')";
     if (mysqli_query($conn, $sql)) {
         $info = "Submitted";
     } else {
