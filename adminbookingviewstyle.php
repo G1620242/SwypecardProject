@@ -63,7 +63,7 @@ include("admindetails.php");
 </div>
 
      </div>
-
+<br>
         <footer class="page-footer">
           <div class="container">
             <div class="row">

@@ -24,7 +24,7 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
     <body>
         <?php include("logged_in_navbar.php");?>
-        <!--Navbar End-->
+        
 
 
         <div class="container">
@@ -80,15 +80,8 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
         <i class="material-icons right">send</i>
       </button>
                 </form>
-
-
         </div>
-
-
-
-
-
-
+<br>
         <footer class="page-footer">
             <div class="container">
                 <div class="row">

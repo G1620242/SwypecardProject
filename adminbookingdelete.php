@@ -1,6 +1,6 @@
 <?php
     include("adminsession.php");
-
+//
     if (!isset($_GET['bookid'])) {
         header('Location: adminbookingview.php');
     } else {

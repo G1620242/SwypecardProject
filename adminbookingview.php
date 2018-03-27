@@ -32,7 +32,7 @@ include("admindetails.php");
          </th><th><a href="adminbookingviewdesign.php">Design Choice</a></th><th><a href="adminbookingviewstyle.php">Style Choice</a></th><th></th></tr>
 
      <?php
-
+//Inner join that selects the ID and the choices from the booking table and the Username from user joining them through CustomerID and ordering them by username
        $sql = "SELECT booking.BookingID, booking.ColourChoice, booking.DesignChoice, booking.StyleChoice, user.Username FROM booking INNER JOIN user ON user.CustomerID = booking.CustomerID ORDER BY Username";
        $res = mysqli_query($conn, $sql);
 
@@ -64,7 +64,7 @@ include("admindetails.php");
 </div>
 
      </div>
-
+<br>
         <footer class="page-footer">
           <div class="container">
             <div class="row">
