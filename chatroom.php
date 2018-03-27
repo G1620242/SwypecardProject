@@ -54,7 +54,7 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
     $message = mysqli_real_escape_string($conn,$_POST["message"]);
     $custid = $_SESSION['login_user'];
-    $iconID = 0;
+    $iconID = '0';
 
     $sql = "INSERT INTO message (message, CustomerID, IconID)
     VALUES ('$message', '$custid', '$iconID')";
