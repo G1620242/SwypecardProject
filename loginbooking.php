@@ -29,7 +29,7 @@ include("bookingchoice.php");
            <div class="col s12 m12 l12">
             <div class="card">
                <div class="card-content white-text">
-                   <h5>Fill in the information below to apply for your card. The details will be used for the card and to contact you</h5>
+                   <h5>Fill in the information to create a unique design for your card</h5>
                </div>
             </div>
          </div>

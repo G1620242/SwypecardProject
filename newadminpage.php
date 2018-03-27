@@ -19,7 +19,7 @@ $info = "";
     <body>
 
        <?php include("admin_navbar.php");?>
-       
+
         <br>
 
              <div class="container">
@@ -29,7 +29,7 @@ $info = "";
            <div class="col s12 m12 l12">
             <div class="card">
                <div class="card-content white-text">
-                   <h4>Please fill in the form to create an account and get access to other features</h4>
+                   <h4>Fill in the inforamtion to create a new admin</h4>
                </div>
             </div>
          </div>
@@ -45,7 +45,7 @@ $info = "";
           <label for="adminpassword">Password</label>
         </div>
         </div>
-          
+
       <!--SUBMIT BUTTON-->
       <button class="btn waves-effect waves-light" type="submit" name="Submit">Submit
     <i class="material-icons right">send</i>

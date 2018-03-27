@@ -5,7 +5,7 @@ session_start();
 ini_set('display_errors', 1);
 $info = "";
 if($_SERVER["REQUEST_METHOD"] == "POST") {
-   // username and password sent from form 
+   // This requests the username and the password from the form
 
    $myusername = mysqli_real_escape_string($conn,$_POST["username"]);
    $mypassword = mysqli_real_escape_string($conn,$_POST["password"]); 
