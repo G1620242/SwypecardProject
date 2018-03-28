@@ -9,7 +9,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $custid = $_SESSION['login_user'];
 
-
+//Inserts the inforamtion from the booking form into the table
     $sql = "INSERT INTO booking (ColourChoice, DesignChoice, StyleChoice, CustomerID)
     VALUES ('$colourchoice', '$designchoice', ' $stylechoice', '$custid')";
     if (mysqli_query($conn, $sql)) {

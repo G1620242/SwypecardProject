@@ -18,7 +18,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
    $count = mysqli_num_rows($result);
 
 
-// Count takes the results row and if it = 1 it log in the user that through the CustomerID and the sesson and send them to the loggin in pages
+// Count takes the results row and if it = 1 it log in the user that through the CustomerID and the sesson and send them to the login in pages
 //otherwise it will state that there password is invalid
    if($count == 1) {
       $_SESSION["login_user"] = $row["CustomerID"];

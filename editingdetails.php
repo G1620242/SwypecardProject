@@ -35,7 +35,7 @@ if (mysqli_query($conn, $sql)) {
 }
 return $info;
 }
-
+// This is the function that the user from the customerID and deletes who is currently logged in using the session
 function deleteUser($conn, $login_user) {
 $sql = "DELETE FROM user WHERE CustomerID = '$_SESSION[login_user]' ";
 if (mysqli_query($conn, $sql)) {
@@ -46,6 +46,7 @@ header("Location: log_out.php");
 }
 return $info;
 }
+//This is the code that posts the update
 if(isset($_POST["update"])){
     $info = updateUser($conn, $_SESSION["login_user"]);
     $row = displayUser($conn, $_SESSION["login_user"]);

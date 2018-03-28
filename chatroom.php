@@ -57,9 +57,11 @@ $row = mysqli_fetch_array($result,MYSQLI_ASSOC);
 
     $message = mysqli_real_escape_string($conn, $_POST["message"]);
     $custid = $_SESSION['login_user'];
-
+//This is the code that will insert the message entered into the message database
     $sql = "INSERT INTO message (message, CustomerID)
     VALUES ('$message', '$custid')";
+    //If the message has been entered and added to the database correctly the page will refresh and state it has been added otherwise it
+    //we state that it was unable to add the message
     if (mysqli_query($conn, $sql)) {
         $info = "Message Added Successfully";
         echo "<meta http-equiv='refresh' content='0'>";

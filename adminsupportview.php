@@ -37,7 +37,7 @@ include("admindetails.php");
        $res = mysqli_query($conn, $sql);
 
        $probconfirm = "";
-
+//A while loop is 
        if (mysqli_num_rows($res) > 0) {
            while($row = mysqli_fetch_assoc($res)) {
                $probid = $row['ProblemID'];
