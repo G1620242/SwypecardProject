@@ -44,9 +44,10 @@ include("admindetails.php");
                $prob = $row['problem'];
                $username = $row['Username'];
                $email = $row['Email'];
+                $time = $row['Time'];
                $phonenumber = $row['PhoneNumber'];
                $probconfirm .= "<div class='row'>
-               $time = $row['Time'];
+
                 <tr><td>$username</td><td>$email</td><td>$phonenumber</td><td>$prob</td><td>$time</td>
               ";
            }
