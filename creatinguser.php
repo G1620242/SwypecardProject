@@ -14,7 +14,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST") {
     $myemail = mysqli_real_escape_string($conn,$_POST["email"]);
     $myphonenumber = mysqli_real_escape_string($conn,$_POST["phone_number"]);
 
-//Inserts the form information into the user table
+//Inserts the information that is from the form into the user table
     $sql = "INSERT INTO User (FirstName, LastName, Username, Password, Address, DOB, Email, PhoneNumber)
     VALUES ('$myfirstname', '$mylastname', '$myusername', '$mypassword', '$myaddress', '$myDOB', '$myemail', '$myphonenumber')";
     if (mysqli_query($conn, $sql)) {
