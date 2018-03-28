@@ -36,7 +36,7 @@ $info = "";
                </div>
             </div>
          </div>
-//The form that will be used to sign in if the correct inforamtion is added
+<!-- The form that will be used to sign in if the correct inforamtion is added -->
          <form class="col s12" method="post">
                <div class="row">
              <div class="input-field col s12">
