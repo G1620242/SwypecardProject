@@ -29,7 +29,7 @@ include("supportsubmit.php");
            <div class="col s12 m12 l12">
             <div class="card">
                <div class="card-content white-text">
-                   <h5>Send the problem you are having and a admin will respond assist in solving it through your contact information. </h5>
+                   <h5>Send the problem you are having and an admin will respond assist in solving it through your contact information. </h5>
                </div>
             </div>
          </div>
