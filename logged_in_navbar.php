@@ -29,6 +29,7 @@
             <li><a href="loginfaq.php">FAQ</a></li>
             <li><a href="loginbooking.php">Book</a></li>
             <li><a href="chatroom.php">Chatroom</a></li>
+            <li><a href="loginsupport.php">Support</a></li>
              <li><a href="profile.php">Profile</a></li>
              <li><a href="log_out.php">Log out</a></li>
       </ul>
