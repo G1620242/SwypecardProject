@@ -47,7 +47,7 @@ include("admindetails.php");
                $phonenumber = $row['PhoneNumber'];
                $probconfirm .= "<div class='row'>
                $time = $row['Time'];
-                             <tr><td>$username</td><td>$email</td><td>$phonenumber</td><td>$prob</td><td>$time</td>
+                <tr><td>$username</td><td>$email</td><td>$phonenumber</td><td>$prob</td><td>$time</td>
               ";
            }
            echo $probconfirm;
