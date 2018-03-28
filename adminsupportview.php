@@ -29,11 +29,11 @@ include("admindetails.php");
          <div class='container'>
          <table>
          <tr><th>Username</th><th>Email
-         </th><th>Phone Number</th><th>Problem</th></tr>
+         </th><th>Phone Number</th><th>Problem</th><th>Time Posted</th></tr>
 
      <?php
 
-       $sql = "SELECT problem.ProblemID, problem.problem, user.Username, user.Email, user.PhoneNumber FROM problem INNER JOIN user ON user.CustomerID = problem.CustomerID ORDER BY Username";
+       $sql = "SELECT problem.ProblemID, problem.problem, problem.Time, user.Username, user.Email, user.PhoneNumber FROM problem INNER JOIN user ON user.CustomerID = problem.CustomerID ORDER BY Username";
        $res = mysqli_query($conn, $sql);
 
        $probconfirm = "";
@@ -46,8 +46,8 @@ include("admindetails.php");
                $email = $row['Email'];
                $phonenumber = $row['PhoneNumber'];
                $probconfirm .= "<div class='row'>
-
-                             <tr><td>$username</td><td>$email</td><td>$phonenumber</td><td>$prob</td>
+               $time = $row['Time'];
+                             <tr><td>$username</td><td>$email</td><td>$phonenumber</td><td>$prob</td><td>$time</td>
               ";
            }
            echo $probconfirm;
