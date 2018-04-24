@@ -4,6 +4,8 @@
       <script>$( document ).ready(function(){$(".button-collapse").sideNav();})</script>
       <script>$( document ).ready(function(){$(".dropdown-button").dropdown();})</script>
       <script> $(document).ready(function(){$('.carousel').carousel();});</script>
+      <script>$(document).ready(function(){$('.parallax').parallax();});</script>
+
         <!--Navbar Start"-->
     <ul id="dropdown1" class="dropdown-content">
         <li><a href="bus_services.php">Bus</a></li>
